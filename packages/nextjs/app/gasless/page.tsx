@@ -18,7 +18,7 @@ const Gasless: NextPage = () => {
         {/* Smart Wallet Connect Button */}
         <div className="flex justify-center mb-8">
           <ConnectButton
-            client={thirdwebClient}  {/* ✅ Use shared client */}
+            client={thirdwebClient} // ✅ Use shared client
             chain={liskSepoliaThirdweb}
             accountAbstraction={{
               chain: liskSepoliaThirdweb,
