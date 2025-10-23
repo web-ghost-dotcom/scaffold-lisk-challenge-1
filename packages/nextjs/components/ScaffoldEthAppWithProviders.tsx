@@ -14,6 +14,9 @@ import { useGlobalState } from "~~/services/store/store";
 import { wagmiConfig } from "~~/services/web3/wagmiConfig";
 import { appChains } from "~~/services/web3/wagmiConnectors";
 
+import { ThirdwebProvider } from "thirdweb/react";
+import { thirdwebClient } from "~~/services/web3/thirdwebConfig";
+
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   const price = useNativeCurrencyPrice();
   const setNativeCurrencyPrice = useGlobalState(state => state.setNativeCurrencyPrice);
@@ -46,6 +49,8 @@ export const ScaffoldEthAppWithProviders = ({ children }: { children: React.Reac
   }, []);
 
   return (
+    <ThirdwebProvider>
+      {" "}
     <WagmiConfig config={wagmiConfig}>
       <ProgressBar />
       <RainbowKitProvider
@@ -56,5 +61,6 @@ export const ScaffoldEthAppWithProviders = ({ children }: { children: React.Reac
         <ScaffoldEthApp>{children}</ScaffoldEthApp>
       </RainbowKitProvider>
     </WagmiConfig>
+    </ThirdwebProvider>
   );
 };
