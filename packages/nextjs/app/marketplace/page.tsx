@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { MarketplaceGrid } from "~~/components/example-ui/MarketplaceGrid";

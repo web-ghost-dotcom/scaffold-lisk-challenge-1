@@ -21,7 +21,7 @@ export const NFTCard = ({ tokenId }: NFTCardProps) => {
   const [isApproved, setIsApproved] = useState(false);
   const [isApproving, setIsApproving] = useState(false);
   const [ethPriceUSD, setEthPriceUSD] = useState<number>(0);
-  const [isLoadingPrice, setIsLoadingPrice] = useState(false);
+  const [, setIsLoadingPrice] = useState(false);
 
   // Get PriceFeed contract info
   const { data: priceFeedContract } = useDeployedContractInfo("PriceFeed");

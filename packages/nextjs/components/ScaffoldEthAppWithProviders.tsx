@@ -15,7 +15,7 @@ import { wagmiConfig } from "~~/services/web3/wagmiConfig";
 import { appChains } from "~~/services/web3/wagmiConnectors";
 
 import { ThirdwebProvider } from "thirdweb/react";
-import { thirdwebClient } from "~~/services/web3/thirdwebConfig";
+// import { thirdwebClient } from "~~/services/web3/thirdwebConfig";
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   const price = useNativeCurrencyPrice();
