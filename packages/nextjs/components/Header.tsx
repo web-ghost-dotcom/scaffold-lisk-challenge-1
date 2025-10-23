@@ -4,7 +4,7 @@ import React, { useCallback, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
-import { Bars3Icon, BugAntIcon, HomeIcon, EnvelopeIcon, CurrencyDollarIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BugAntIcon, HomeIcon, EnvelopeIcon, CurrencyDollarIcon, SparklesIcon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 import {
   DappConsoleButton,
   FaucetButton,
@@ -40,6 +40,11 @@ export const menuLinks: HeaderMenuLink[] = [
     label: "Events",
     href: "/events",
     icon: <EnvelopeIcon className="h-4 w-4" />,
+  },
+  {
+    label: "Marketplace",  // Add this entire object
+    href: "/marketplace",
+    icon: <ShoppingCartIcon className="h-4 w-4" />,
   },
   {
     label: "Debug Contracts",
