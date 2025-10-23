@@ -1,3 +1,16 @@
 {
-  "installCommand": "yarn install"
+  "installCommand": "yarn install",
+  "buildCommand": "yarn build",
+  "env": {
+    "PYTHON_SKIP_NATIVE": "true",
+    "npm_config_build_from_source": "false",
+    "npm_config_optional": "false"
+  },
+  "build": {
+    "env": {
+      "PYTHON_SKIP_NATIVE": "true",
+      "npm_config_build_from_source": "false",
+      "npm_config_optional": "false"
+    }
+  }
 }

@@ -34,6 +34,9 @@
     "vercel": "yarn workspace @se-2/nextjs vercel",
     "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo"
   },
+  "resolutions": {
+    "bigint-buffer": "1.1.5"
+  },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
     "husky": "^8.0.1",
